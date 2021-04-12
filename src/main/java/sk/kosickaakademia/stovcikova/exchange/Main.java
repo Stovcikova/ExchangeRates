@@ -1,5 +1,7 @@
 package sk.kosickaakademia.stovcikova.exchange;
 
+import sk.kosickaakademia.stovcikova.exchange.calc.Calculator;
+
 /**
  * Hello world!
  *
@@ -10,5 +12,10 @@ public class Main
     {
 
         System.out.println( "Welcome to the Exchange Rates app!!!" );
+
+        Calculator calculator = new Calculator();
+        calculator.calculate(100);
     }
+
+
 }

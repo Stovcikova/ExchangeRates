@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.kosickaakademia.stovcikova.exchange.gui.Controller">
+   <children>
+      <TextFlow>
+         <children>
+            <AnchorPane opacity="0.91" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <ComboBox fx:id="cmb_currency" layoutX="224.0" layoutY="187.0" prefWidth="150.0" />
+                  <TextField fx:id="txt_value" layoutX="54.0" layoutY="187.0" />
+                  <TextField fx:id="txt_result" layoutX="395.0" layoutY="187.0" />
+                  <Button fx:id="btn_change" layoutX="271.0" layoutY="276.0" mnemonicParsing="false" onAction="#change" text="Change" />
+                  <Label layoutX="110.0" layoutY="149.0" prefHeight="18.0" prefWidth="35.0" text="Value:">
+                     <textFill>
+                        <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.12156862765550613" green="0.06666667014360428" blue="0.5411764979362488" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.08817251771688461" green="0.09736841917037964" blue="0.09353679418563843" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="271.0" layoutY="149.0" text="Currency:" />
+                  <Label layoutX="451.0" layoutY="149.0" text="Result:" />
+               </children>
+            </AnchorPane>
+         </children>
+      </TextFlow>
+   </children>
+</Pane>
